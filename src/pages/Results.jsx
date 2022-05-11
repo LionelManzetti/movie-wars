@@ -40,7 +40,7 @@ function Results() {
           Nombre de coups: {clic}
         </p>
         <p className="text-cyan-700 text-2xl leading-normal font-bold text-center mb-2">
-          Partage ton score avec tes amis
+          Partage ton score avec tes amis :
         </p>
 
         <button
