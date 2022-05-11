@@ -166,7 +166,7 @@ function Game() {
         <div id="navigation" className="flex justify-between m-4">
           <button
             type="button"
-            className="text-white w-32 font-semibold text-lg bg-orange-500 p-2 rounded-lg drop-shadow-lg"
+            className="text-white w-32 font-semibold text-lg bg-orange-400 p-2 rounded-lg drop-shadow-lg"
             onClick={() => {
               if (historic.length - 2 > 0) {
                 switchPosition(historic[historic.length - 2].id);
@@ -182,7 +182,7 @@ function Game() {
           <button
             id="trigger"
             type="button"
-            className="text-white w-32 font-semibold text-lg bg-orange-500 p-2 rounded-lg decoration-purple-100 drop-shadow-lg"
+            className="text-white w-32 font-semibold text-lg bg-orange-400 p-2 rounded-lg decoration-purple-100 drop-shadow-lg"
             onClick={() => {
               setTimeout(() => {
                 if (type === "person") {

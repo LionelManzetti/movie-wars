@@ -51,7 +51,7 @@ function Results() {
               setLink("invisible");
             }, 300);
             navigator.clipboard.writeText(
-              `http://localhost:3000/replay/${moviesId[0]}/${moviesId[1]}/${username}/${chrono}/${clic}`
+              `http://moviewars.netlify.app/replay/${moviesId[0]}/${moviesId[1]}/${username}/${chrono}/${clic}`
             );
           }}
         >

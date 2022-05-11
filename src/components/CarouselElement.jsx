@@ -4,11 +4,11 @@ function CarouselElement({ element, changeData }) {
   return (
     <button
       type="button"
-      className="min-w-full rounded shadow-xl"
+      className="min-w-full h-max rounded shadow-xl"
       onClick={() => changeData(element.id)}
     >
       <img
-        className="max-h-32 w-full object-cover object-center"
+        className="max-h-32 min-h-32 w-full object-cover object-center"
         src={`https://image.tmdb.org/t/p/w342/${
           element.profile_path ? element.profile_path : element.poster_path
         }`}

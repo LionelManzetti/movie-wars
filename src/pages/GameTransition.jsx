@@ -9,24 +9,26 @@ function GameTransition() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/game");
-    }, 3000);
+    }, 2300);
   }, []);
 
   return (
     <motion.div
-      className="bg-black h-screen w-96 flex justify-center"
+      className="bg-black h-screen w-full flex flex-col items-center justify-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className="absolute top-20 text-center text-teal-200 text-2xl">
+      <p className="top-20 text-center text-teal-200 text-2xl">
         Partez de : {start}
       </p>
-      <video id="background-video" autoPlay muted>
-        <source src="/src/assets/movie-countdown.mp4" type="video/mp4" />
-      </video>
-      <p className="absolute w-52 bottom-10 max-h-32 text-center text-orange-200 text-2xl">
+      <img
+        src="/src/assets/movie-countdown.gif"
+        alt="countdown"
+        className="w-full "
+      />
+      <p className="w-52 bottom-10 max-h-32 text-center text-orange-200 text-2xl">
         Pour arriver à : {end}
       </p>
     </motion.div>

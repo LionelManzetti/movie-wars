@@ -2,10 +2,10 @@ import React from "react";
 
 function DifficultySwiper({ difficulty, setDifficulty }) {
   return (
-    <div className="flex flex-col text-cyan-700 m-3 border shadow-inner p-2 w-1/2 rounded-lg">
+    <div className="flex flex-col text-cyan-700 bg-gray-100 m-3 border shadow-inner p-2 w-1/2 rounded-lg">
       <div className="self-center">
         <select
-          className=" text-center font-semibold"
+          className=" text-center font-semibold bg-gray-100"
           defaultValue={difficulty}
           onChange={(event) => setDifficulty(event.target.value)}
         >

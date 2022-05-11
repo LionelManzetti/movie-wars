@@ -2,7 +2,7 @@ import React from "react";
 
 function Position({ items }) {
   return (
-    <div className="rounded-lg w-auto overflow-hidden shadow-lg m-2 object-cover  flex justify-between items-center">
+    <div className="rounded-lg max-h-44 w-auto overflow-hidden shadow-lg m-4 flex justify-between items-center">
       <img
         className="w-1/2 object-cover"
         src={`https://image.tmdb.org/t/p/w342/${
