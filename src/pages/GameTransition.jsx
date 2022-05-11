@@ -23,11 +23,17 @@ function GameTransition() {
       <p className="top-20 text-center text-teal-200 text-2xl">
         Partez de : {start}
       </p>
-      <img
+      {/* <img
         src="/src/assets/movie-countdown.gif"
         alt="countdown"
         className="w-full "
-      />
+      /> */}
+      <video id="background-video" autoPlay loop muted className="w-full">
+        <source
+          src="https://thumbs.gfycat.com/AntiqueLightheartedIbizanhound-mobile.mp4"
+          type="video/mp4"
+        />
+      </video>
       <p className="w-52 bottom-10 max-h-32 text-center text-orange-200 text-2xl">
         Pour arriver à : {end}
       </p>
