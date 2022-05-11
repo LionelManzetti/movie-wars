@@ -31,7 +31,7 @@ function App() {
           path="/replay/:start/:end/:username/:timer/:clic"
           element={<Replay />}
         />
-        <Route path="/error" element={<Error />} />
+        <Route path="/*" element={<Error />} />
       </Routes>
     </AnimatePresence>
   );

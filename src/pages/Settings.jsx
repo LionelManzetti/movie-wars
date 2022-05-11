@@ -57,6 +57,10 @@ function Settings() {
     prepareData();
   }, []);
 
+  useEffect(() => {
+    prepareData();
+  }, [difficulty]);
+
   return (
     <motion.div
       className="flex flex-col"
